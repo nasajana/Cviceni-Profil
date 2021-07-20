@@ -28,33 +28,29 @@ body {
 	color: whitesmoke;
 	font-family: sans-serif;
 	padding: 20px 10px;
+	margin: auto
 }
 .profil{
 	background-color: #31363b;
 	max-width: 300px;
-
-	
+	box-shadow:0px 0px 15px 0px black;
 }
 
 .jmeno{
 	font-family: 'Montserrat', sans-serif;
 	color:aliceblue
-
 }
 
 .hlavicka{
 	position: relative;
-
 }
 
 .foto{
 	width: 100%;
-	
 }
 .logo{
 	background-color: #b92e81;
 	border-radius: 50%;
-	
 	position: absolute;
 	left: 70%;
 	top: 85%;
@@ -69,36 +65,47 @@ body {
 .odkazy li{
 
 	display: inline-block;
-	padding: 20px;
+	padding: 1rem 1rem;
+	text-align: center;
 }
 
 .odkazy a{
 	font-family: 'Montserrat', sans-serif;
 	color: whitesmoke;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 .portfolio{
-	display: block;
+	border-top: slategrey solid 1px;
+	border-bottom: slategrey solid 1px;
 	width: 100%;
-}
-.portfolio a:hover, a:focus{
-	background-color: #e74c3c;
-	padding: 10px;
-	box-shadow:5px 5px 10px black;
+	position: relative;
+	left: -10px;
 	
 }
+.portfolio a:hover, 
+.portfolio a:focus{
+	background-color: #e74c3c;
+	padding: 1em 1em;
+
+}
 .facebook{
-
+	
+	align-content: center;
+	width: 50%;
 
 }
-.facebook a:hover, a:focus{
+.facebook a:hover, 
+.facebook a:focus{
 	background-color: #3b5998;
-	padding: 10px;
-	box-shadow:5px 5px 10px rgb(29, 29, 29);
+	padding: 1em 1em;
 }
+.twitter{
+	width: 50%;
 
-.twitter a:hover, a:focus{
-
+}
+.twitter a:hover, 
+.twitter a:focus{
 	background-color: #1da1f2;
-	padding: 10px;
-	box-shadow:5px 5px 10px black;
+	padding: 1em 1em;
 }
