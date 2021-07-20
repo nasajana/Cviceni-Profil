@@ -28,17 +28,20 @@ body {
 	color: whitesmoke;
 	font-family: sans-serif;
 	padding: 20px 10px;
-	margin: auto
+	
 }
 .profil{
 	background-color: #31363b;
 	max-width: 300px;
 	box-shadow:0px 0px 15px 0px black;
+	margin-left: auto;
+	margin-right: auto;
+	color:#d6d6d6;
 }
 
 .jmeno{
 	font-family: 'Montserrat', sans-serif;
-	color:aliceblue
+	/*color:aliceblue*/
 }
 
 .hlavicka{
@@ -51,9 +54,18 @@ body {
 .logo{
 	background-color: #b92e81;
 	border-radius: 50%;
+	box-shadow: 5px 5px 15px rgb(51, 51, 51);
 	position: absolute;
 	left: 70%;
-	top: 85%;
+	bottom:-10%;
+	/*top: 85%;
+
+	kdybychom chtěli použít foto na výšku v jiné velikosti, tak to moje nesedí
+	bude to
+	bottom:-10%
+	tím je to -10 od spodního okraje toho obrázku? */;
+	
+	
 }
 
 .obsah{
@@ -62,48 +74,60 @@ body {
 	padding: 20px 20px;
 }
 
-.odkazy li{
+a{
 
-	display: inline-block;
-	padding: 1rem 1rem;
-	text-align: center;
-}
-
-.odkazy a{
-	font-family: 'Montserrat', sans-serif;
-	color: whitesmoke;
-	text-transform: uppercase;
+	color: inherit;
 	text-decoration: none;
+	
 }
+.odkazy a{
+	padding: 10px;
+}
+.odkazy {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;	
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	
+	/*dávám k písmu inherit - to mi zajistí, že bude u odkazů barva stejná jako u textu i když ten text nějak změním*/
+	
+	
+}
+
+/*tohle s odrážkami dělá jinak, koukni na youtube záznam...*/
 .portfolio{
 	border-top: slategrey solid 1px;
 	border-bottom: slategrey solid 1px;
-	width: 100%;
-	position: relative;
-	left: -10px;
 	
+	
+}
+.twitter{
+
+	border-left: slategrey solid 1px;
+}
+
+.portfolio,
+.facebook,
+.twitter {
+	
+	align-content: center;
+	padding: 5px;
+
 }
 .portfolio a:hover, 
 .portfolio a:focus{
 	background-color: #e74c3c;
 	padding: 1em 1em;
-
+		
 }
-.facebook{
-	
-	align-content: center;
-	width: 50%;
 
-}
 .facebook a:hover, 
 .facebook a:focus{
 	background-color: #3b5998;
 	padding: 1em 1em;
 }
-.twitter{
-	width: 50%;
 
-}
 .twitter a:hover, 
 .twitter a:focus{
 	background-color: #1da1f2;
